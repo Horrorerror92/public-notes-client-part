@@ -1,0 +1,35 @@
+.main-content {
+  display: flex;
+  flex-flow: column;
+  margin-top: 10px;
+  
+  &:first-child {
+    margin-top: 0;
+  } 
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__date {
+    font-size: 14px;
+    font-style: italic;
+    color: #656565;
+  }
+
+  &__content-text {
+    font-size: 16px;
+    color:black;
+    text-align: justify;
+    margin-right: 20px;
+  }
+
+  &__author {
+    font-size: 14px;
+    font-style: italic;
+    color:#656565;
+    text-align: right;
+    margin-right: 20px;
+  }
+}

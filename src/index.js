@@ -1,7 +1,6 @@
+/* eslint-disable import/extensions */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App.js';
 
 ReactDOM.render(<App />, document.getElementById('root'));
-
-console.log('Hello from index in src');

@@ -1,0 +1,27 @@
+.main {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  width: 50vw;
+  height: 80vh;
+  overflow: hidden;
+
+  &__overflow{
+    overflow: auto;
+    
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #c4c4c4;
+      border-radius: 4px; 
+    }
+  }
+}
+
+.main_position {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
