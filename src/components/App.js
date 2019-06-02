@@ -5,8 +5,10 @@ import classNames from 'classnames';
 import Header from './Header/Header';
 import Main from './Main/Main';
 import ArticleNav from './ArticleNav/ArticleNav';
+import Footer from './Footer/Footer';
 import '../styles/layout.scss';
 import '../styles/button.scss';
+
 
 class App extends Component {
   render() {
@@ -17,6 +19,7 @@ class App extends Component {
           <Header name="Type string: name from data or guest" />
           <ArticleNav title="example title" />
           <Main />
+          <Footer />
         </div>
       </>
     );

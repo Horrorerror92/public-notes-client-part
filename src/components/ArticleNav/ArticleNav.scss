@@ -1,9 +1,12 @@
+$dark-gray: #424242;
+$almost-black : #2E2E2E;
+
 .article-nav {
   position: absolute;
   top: 10vh;
   
   &__list {
-    color:#4f4fbb;
+    color:$dark-gray;
     display: flex;
     flex-flow: column;
   }
@@ -12,7 +15,7 @@
 
     &:hover{
       cursor: pointer;
-      color: #4646a0;
+      color: $almost-black;
     }
   }
 }

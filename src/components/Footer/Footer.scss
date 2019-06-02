@@ -1,0 +1,22 @@
+$dark-gray: #424242;
+
+.footer {
+  display: flex;
+  position: absolute;
+  bottom: -50px;
+  align-items: center;
+  justify-content: flex-end;
+  width : 100%;
+  height: 50px;
+  
+}
+
+.footer__text {
+  color:$dark-gray;
+  font-size: 12px;
+  cursor: default;
+
+  &_position {
+    margin-right: 10px;
+  }
+}

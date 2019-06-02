@@ -1,3 +1,5 @@
+$almost-black : #2E2E2E;
+
 .button {
   color: white;
   font-size: 16px;
@@ -7,6 +9,6 @@
 .button__header{
   height: 100%;
   &:hover{
-    background-color: #4646a0;
+    background-color: $almost-black;
   }
 }
