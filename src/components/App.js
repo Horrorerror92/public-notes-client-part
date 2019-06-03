@@ -17,7 +17,7 @@ class App extends Component {
         <div className={wrapper}>
           {/* TODO name from data */}
           <Header name="Type string: name from data or guest" />
-          <ArticleNav title="example title" />
+          <ArticleNav title="example title sdsadasdasdasdasd" />
           <Main />
           <Footer />
         </div>

@@ -6,7 +6,7 @@
   height: 80vh;
   overflow: hidden;
 
-  &__overflow{
+    &__overflow{
     overflow: auto;
     
     &::-webkit-scrollbar {
@@ -18,6 +18,11 @@
       border-radius: 4px; 
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    width: 90vw;
+  }
+
 }
 
 .main_position {

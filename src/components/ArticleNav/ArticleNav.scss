@@ -18,4 +18,10 @@ $almost-black : #2E2E2E;
       color: $almost-black;
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    
+    display: none;
+    
+  }
 }
