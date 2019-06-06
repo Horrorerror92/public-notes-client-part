@@ -12,9 +12,14 @@ const Header = ({ name }) => (
       {name}
       !
     </h1>
-    <button className={buttonHeader}>
-      Registration
-    </button>
+    <div className={headerButtonArea}>
+      <button className={buttonHeader}>
+        Add Note
+      </button>
+      <button className={buttonHeader}>
+        Registration
+      </button>
+    </div>
   </div>
 );
 
@@ -30,6 +35,10 @@ const headerTitleClass = classNames({
 const buttonHeader = classNames({
   button: true,
   button__header: true,
+});
+
+const headerButtonArea = classNames({
+  'header__button-area': true,
 });
 
 Header.propTypes = {

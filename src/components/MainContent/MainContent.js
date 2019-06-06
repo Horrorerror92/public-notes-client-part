@@ -3,13 +3,17 @@ import React from 'react';
 import './MainContent.scss';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
+import ContentAreaButton from '../ContentAreaButton/ContentAreaButton';
 
 const MainContent = ({
-  title, date, contentText, author,
+  title, createdAt, contentText, author, _id,
 }) => (
   <div className={mainContentClass}>
-    <h2 className={mainContentTitle}>{title}</h2>
-    <span className={mainContentDateClass}>{date}</span>
+    <a href={`/news/${_id}`}>
+      <h2 className={mainContentTitle}>{title}</h2>
+    </a>
+    <ContentAreaButton />
+    <span className={mainContentDateClass}>{createdAt}</span>
     <p className={mainContentTextClass}>{contentText}</p>
     <span className={mainContentAuthorClass}>{author}</span>
   </div>
@@ -36,9 +40,10 @@ const mainContentAuthorClass = classNames({
 
 MainContent.propTypes = {
   title: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
+  createdAt: PropTypes.instanceOf(Date).isRequired, // mix type of prop`s
   contentText: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
+  _id: PropTypes.number.isRequired,
 };
 
 export default MainContent;

@@ -7,22 +7,27 @@ $dark-gray: #424242;
   width : 100%;
   height: 50px;
   background-color: $dark-gray;
-}
 
-.header__text {
-  color:white;
-  font-size: 16px;
-  cursor: default;
 
-  &_position {
-    margin-left: 10px;
+  &__text {
+    color:white;
+    font-size: 16px;
+    cursor: default;
+
+    &_position {
+      margin-left: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 
-  @media screen and (max-width: 768px) {
-    font-size: 12px;
+  &__button-area{
+    height: 100%;
   }
-}
 
+}
 
 
 

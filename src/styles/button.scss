@@ -4,17 +4,33 @@ $almost-black : #2E2E2E;
   color: white;
   font-size: 16px;
   
-}
+  &__header{
+    height: 100%;
+    margin-left: 10px;
 
-.button__header{
-  height: 100%;
+    &:hover{
+      background-color: $almost-black;
+    }
 
-  &:hover{
-    background-color: $almost-black;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+    
   }
 
-  @media screen and (max-width: 768px) {
-    display: none;
+  &__note-control{
+    margin-left: 20px;
+    font-style: italic;
+    color: #656565;
+
+    &:hover{
+      color: $almost-black;
+    }
+
+    &:first-child{
+      margin-left: 0;
+    }
+    
   }
-  
+
 }
