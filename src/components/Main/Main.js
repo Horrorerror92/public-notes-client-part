@@ -1,13 +1,22 @@
-/* eslint-disable no-use-before-define */
 import React from 'react';
 import classNames from 'classnames';
-import MainContent from '../MainContent/MainContent';
+// import MainContent from '../MainContent/MainContent';
+import NoteForm from '../NoteForm/NoteForm';
 import './Main.scss';
+
+const mainClass = classNames({
+  main: true,
+  main_position: true,
+});
+
+const mainOverflowClass = classNames({
+  main__overflow: true,
+});
 
 const Main = () => (
   <div className={mainClass}>
     <div className={mainOverflowClass}>
-      <MainContent
+      {/* <MainContent
         title="one"
         createdAt={`${new Date()}`}
         contentText="Ut proident irure ad duis reprehenderit nisi dolor aliqua magna nostrud do.
@@ -55,18 +64,12 @@ const Main = () => (
         elit amet ullamco consequat fugiat ad.Eu culpa Lorem duis minim dolor."
         author="Flex Grid"
         _id={3}
-      />
+      /> */}
+
+      <NoteForm />
     </div>
   </div>
 );
 
-const mainClass = classNames({
-  main: true,
-  main_position: true,
-});
-
-const mainOverflowClass = classNames({
-  main__overflow: true,
-});
 
 export default Main;

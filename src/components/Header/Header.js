@@ -5,24 +5,6 @@ import PropTypes from 'prop-types';
 import './Header.scss';
 import classNames from 'classnames';
 
-const Header = ({ name }) => (
-  <div className={headerClass}>
-    <h1 className={headerTitleClass}>
-      Hello,
-      {name}
-      !
-    </h1>
-    <div className={headerButtonArea}>
-      <button className={buttonHeader}>
-        Add Note
-      </button>
-      <button className={buttonHeader}>
-        Registration
-      </button>
-    </div>
-  </div>
-);
-
 const headerClass = classNames({
   header: true,
 });
@@ -40,6 +22,24 @@ const buttonHeader = classNames({
 const headerButtonArea = classNames({
   'header__button-area': true,
 });
+
+const Header = ({ name }) => (
+  <div className={headerClass}>
+    <h1 className={headerTitleClass}>
+      Hello,
+      {name}
+      !
+    </h1>
+    <div className={headerButtonArea}>
+      <button className={buttonHeader}>
+        Add Note
+      </button>
+      <button className={buttonHeader}>
+        Registration
+      </button>
+    </div>
+  </div>
+);
 
 Header.propTypes = {
   name: PropTypes.string.isRequired,
