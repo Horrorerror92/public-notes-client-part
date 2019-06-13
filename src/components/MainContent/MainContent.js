@@ -3,6 +3,7 @@ import React from 'react';
 import './MainContent.scss';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import ContentAreaButton from '../ContentAreaButton/ContentAreaButton';
 
 const mainContentClass = classNames({
@@ -28,9 +29,9 @@ const MainContent = ({
   title, createdAt, contentText, author, _id,
 }) => (
   <div className={mainContentClass}>
-    <a href={`/news/${_id}`}>
+    <Link to={`/news/${_id}`}>
       <h2 className={mainContentTitle}>{title}</h2>
-    </a>
+    </Link>
     <ContentAreaButton />
     <span className={mainContentDateClass}>{createdAt}</span>
     <p className={mainContentTextClass}>{contentText}</p>
@@ -41,7 +42,8 @@ const MainContent = ({
 
 MainContent.propTypes = {
   title: PropTypes.string.isRequired,
-  createdAt: PropTypes.instanceOf(Date).isRequired, // mix type of prop`s
+  // createdAt: PropTypes.instanceOf(Date).isRequired, // mix type of prop`s
+  createdAt: PropTypes.string.isRequired,
   contentText: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   _id: PropTypes.number.isRequired,

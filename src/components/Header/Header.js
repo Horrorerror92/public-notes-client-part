@@ -4,6 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Header.scss';
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 
 const headerClass = classNames({
   header: true,
@@ -25,18 +26,24 @@ const headerButtonArea = classNames({
 
 const Header = ({ name }) => (
   <div className={headerClass}>
-    <h1 className={headerTitleClass}>
-      Hello,
-      {name}
-      !
-    </h1>
+    <Link to="/">
+      <h1 className={headerTitleClass}>
+        Hello,
+        {name}
+        !
+      </h1>
+    </Link>
     <div className={headerButtonArea}>
-      <button className={buttonHeader}>
-        Add Note
-      </button>
-      <button className={buttonHeader}>
-        Registration
-      </button>
+      <Link to="/add">
+        <button className={buttonHeader}>
+          Add Note
+        </button>
+      </Link>
+      <Link to="#">
+        <button className={buttonHeader}>
+          Registration
+        </button>
+      </Link>
     </div>
   </div>
 );
