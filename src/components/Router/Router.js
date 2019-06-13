@@ -46,7 +46,18 @@ const Router = () => (
           />
         )}
       />
-      <Route exact path="/news/:id" component={ViewNote} />
+      <Route
+        exact
+        path="/news/:id"
+        component={() => (
+          <ViewNote
+            title="one"
+            createdAt={`${new Date()}`}
+            contentText="Ut proident irure ad duis reprehenderit nisi dolor Ut proident irure ad duis reprehenderit nisi dolor Ut proident irure ad duis reprehenderit nisi dolor Ut proident irure ad duis reprehenderit nisi dolor Ut proident irure ad duis reprehenderit nisi dolor  "
+            author="Flex Box"
+          />
+        )}
+      />
       <Route exact path="/add" component={NoteForm} />
     </Switch>
   </>

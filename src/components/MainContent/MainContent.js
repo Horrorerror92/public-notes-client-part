@@ -4,7 +4,6 @@ import './MainContent.scss';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import ContentAreaButton from '../ContentAreaButton/ContentAreaButton';
 
 const mainContentClass = classNames({
   'main-content': true,
@@ -32,7 +31,6 @@ const MainContent = ({
     <Link to={`/news/${_id}`}>
       <h2 className={mainContentTitle}>{title}</h2>
     </Link>
-    <ContentAreaButton />
     <span className={mainContentDateClass}>{createdAt}</span>
     <p className={mainContentTextClass}>{contentText}</p>
     <span className={mainContentAuthorClass}>{author}</span>
