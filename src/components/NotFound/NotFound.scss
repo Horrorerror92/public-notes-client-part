@@ -1,0 +1,11 @@
+.not-found{
+
+  display:flex;
+  justify-content: center;
+
+  &__title {
+    font-size: 28px;
+    font-weight: bold;
+    color:black;
+  }
+}

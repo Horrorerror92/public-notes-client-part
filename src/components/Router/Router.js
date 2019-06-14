@@ -3,6 +3,8 @@ import { Route, Switch } from 'react-router-dom';
 import MainContentList from '../MainContentList/MainContentList';
 import NoteForm from '../NoteForm/NoteForm';
 import ViewNote from '../ViewNote/ViewNote';
+import RegistrationForm from '../RegistrationForm/RegistrationForm';
+import NotFound from '../NotFound/NotFound';
 
 const Router = () => (
   <>
@@ -59,6 +61,8 @@ const Router = () => (
         )}
       />
       <Route exact path="/add" component={NoteForm} />
+      <Route exact path="/registration" component={RegistrationForm} />
+      <Route path="*" component={NotFound} />
     </Switch>
   </>
 

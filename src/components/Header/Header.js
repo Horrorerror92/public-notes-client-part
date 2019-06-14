@@ -39,7 +39,7 @@ const Header = ({ name }) => (
           Add Note
         </button>
       </Link>
-      <Link to="#">
+      <Link to="/registration">
         <button className={buttonHeader}>
           Registration
         </button>

@@ -1,0 +1,51 @@
+.view-content {
+  display: flex;
+  flex-flow: column;
+  margin-top: 10px;
+  
+  &:first-child {
+    margin-top: 0;
+  } 
+
+  &__title {
+    font-size: 28px;
+    font-weight: bold;
+    color:black;
+  }
+
+  &__date {
+    font-size: 18px;
+    font-style: italic;
+    color: #656565;
+  }
+
+  &__content-text {
+    font-size: 20px;
+    color:black;
+    text-align: justify;
+    margin-right: 20px;
+  }
+
+  &__author {
+    font-size: 18px;
+    font-style: italic;
+    color:#656565;
+    text-align: right;
+    margin-right: 20px;
+  }
+
+  &__back-link {
+    display: flex;
+    color: white;
+    background: #424242;
+    width: 80px;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 5px;
+
+      &:hover{
+        background: black;
+      }
+    
+  }
+}
